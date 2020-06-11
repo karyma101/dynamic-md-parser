@@ -1,10 +1,22 @@
 import React, { Component } from 'react'
-import ReactMarkdown from 'react-markdown'
-import source from '../content/test.md'
+import { Switch, Route, Link } from 'react-router-dom'
+
+import Home from './Home'
+import Body from './Body'
 
 class App extends Component {
     render() {
-        return <ReactMarkdown source={source} />
+        return (
+            <div>
+                <Link to="/">Home</Link>
+                <Link to="/python">Python</Link>
+
+                <Switch>
+                    <Route path="/:name" component={Body} />
+                    <Route path="/" component={Home} />
+                </Switch>
+            </div>
+        )
     }
 }
 
