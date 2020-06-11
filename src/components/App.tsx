@@ -9,7 +9,7 @@ class App extends Component {
         return (
             <div>
                 <Link to="/">Home</Link>
-                <Link to="/python">Python</Link>
+                <Link to="/javascript">Javascript</Link>
 
                 <Switch>
                     <Route path="/:name" component={Body} />

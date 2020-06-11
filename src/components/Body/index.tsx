@@ -1,8 +1,12 @@
 import React from 'react'
+import ReactMarkdown from 'react-markdown'
 
-const Body = ({ match, location }) => {
-    console.log(match)
-    return <h1>Body</h1>
+import content from '../../content'
+
+const Body = (props) => {
+    const name = props.match.params.name.toLowerCase()
+
+    return <ReactMarkdown source={content[name]} />
 }
 
 export default Body
