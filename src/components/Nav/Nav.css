@@ -3,4 +3,13 @@
     text-decoration: none;
     letter-spacing: 2px;
     font-weight: 600;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.active {
+    background-color: #3559d6;
+    color: white;
 }

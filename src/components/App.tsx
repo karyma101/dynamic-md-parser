@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom'
 
+import Header from './Header'
 import Home from './Home'
 import Nav from './Nav'
 import Body from './Body'
@@ -11,6 +12,7 @@ class App extends Component {
     render() {
         return (
             <div className={style.app}>
+                <Header />
                 <div className={style.nav}>
                     <Nav />
                 </div>
