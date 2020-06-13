@@ -2,3 +2,29 @@
     margin: 0;
     padding: 0;
 }
+
+html {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 10px 0;
+}
+
+ul {
+    padding-left: 30px;
+}
+
+p {
+    font-size: 18px;
+}
+
+pre {
+    background-color: lightgray;
+}
