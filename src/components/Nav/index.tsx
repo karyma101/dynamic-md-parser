@@ -5,16 +5,26 @@ import content from '../../content'
 
 import style from './Nav.css'
 
-const Nav = ({ location }) => {
+interface Props {
+    location: {
+        pathname: string
+        search: string
+        hash: string
+        state: any
+    }
+}
+
+const Nav: React.FC<Props> = ({ location }) => {
     const links = Object.keys(content)
-    const pathName = location.pathname.substr(1)
+    const pathName: string = location.pathname.substr(1).replace(/_/g, ' ')
 
     const renderLinks = links.map((link, i) => {
-        const styles = pathName === link ? `${style.link} ${style.active}` : style.link
+        const linkName = link.replace(/_/g, ' ')
+        const styles: string = pathName === linkName ? `${style.link} ${style.active}` : style.link
 
         return (
             <Link key={`link_${i}`} to={`/${link}`} className={styles}>
-                {link}
+                {linkName}
             </Link>
         )
     })

@@ -1,11 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import style from './Header.css'
 
-const Header = () => {
+const Header: React.FC = () => {
     return (
         <div className={style.header}>
-            <h1 className={style.title}>Dev Cheatsheet</h1>
+            <Link to="/" className={style.title}>
+                Dev Cheatsheet
+            </Link>
         </div>
     )
 }
