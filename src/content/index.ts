@@ -1,15 +1,25 @@
+import bash from './bash.md'
+import css from './css.md'
+import computer_science from './computer_science.md'
+import git from './git.md'
+import graphql from './graphql.md'
 import javascript from './javascript.md'
 import python from './python.md'
+import regex from './regex.md'
 import seo_optimization from './seo_optimization.md'
 import typescript from './typescript.md'
-import regex from './regex.md'
 
 const content: { [index: string]: string } = {
+    bash,
+    computer_science,
+    css,
+    git,
+    graphql,
     javascript,
     python,
-    typescript,
-    seo_optimization,
     regex,
+    seo_optimization,
+    typescript,
 }
 
 export default content
