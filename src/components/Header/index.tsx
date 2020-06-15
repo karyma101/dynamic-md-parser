@@ -13,15 +13,15 @@ const Header: React.FC<Props> = ({ toggleMenu }) => {
             <div className={style.hamburger}>
                 <svg
                     className={style.hamburger_menu}
-                    width="34"
-                    height="23"
+                    width="30"
+                    height="30"
                     viewBox="0 0 34 23"
                     fill="none"
                     onClick={toggleMenu}
                 >
-                    <rect width="34" height="5.17391" fill="white" />
-                    <rect y="17.7391" width="34" height="5.17391" fill="white" />
-                    <rect y="8.86955" width="34" height="5.17391" fill="white" />
+                    <rect width="30" height="5.17391" fill="white" />
+                    <rect y="17.7391" width="30" height="5.17391" fill="white" />
+                    <rect y="8.86955" width="30" height="5.17391" fill="white" />
                 </svg>
             </div>
 

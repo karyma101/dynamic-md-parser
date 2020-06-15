@@ -1,12 +1,16 @@
 import React from 'react'
 
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
-import { monokai } from 'react-syntax-highlighter/dist/esm/styles/prism'
+import { prism as style } from 'react-syntax-highlighter/dist/esm/styles/prism'
 
-const CodeBlock = ({ language, value }) => {
-    console.log(language)
+interface Props {
+    language: string
+    value: string
+}
+
+const CodeBlock: React.FC<Props> = ({ language, value }) => {
     return (
-        <SyntaxHighlighter language={language} style={monokai}>
+        <SyntaxHighlighter language={language} style={style}>
             {value}
         </SyntaxHighlighter>
     )

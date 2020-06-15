@@ -9,7 +9,15 @@
     padding: 5px 10px;
 }
 
+.link:visited {
+    color: black;
+}
+
 .active {
     background-color: #3559d6;
+    color: white;
+}
+
+.active:visited {
     color: white;
 }

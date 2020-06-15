@@ -20,6 +20,10 @@
     text-decoration: none;
 }
 
+.title_text:visited {
+    color: white;
+}
+
 .spacer {
     flex: 1 1 0;
 }
