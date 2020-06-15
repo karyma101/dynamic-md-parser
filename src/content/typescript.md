@@ -1,5 +1,7 @@
 # Typescript
 
+Typescript is a superset of Javascript that compiles to plain javascript.
+
 ```
   tsc --init
   // Generates a typescript config file
@@ -7,7 +9,7 @@
 
 ## Basic Types
 
-```Typescript
+```typescript
 any
 void
 
@@ -18,8 +20,12 @@ number
 null
 undefined
 
-string[] // Array<string>
-[string, number] // Tuple
+// Arrays
+number[]
+Array<nunber>
+
+// Tuple
+[string, number]
 
 string | null | undefined // Union
 

@@ -1,7 +1,6 @@
 # Python
 
 Interpreted language, saves time because no compilation or linking necessary, tradeoff compared to complied languages is that it is generally slower. Python is an dynamic typed programming language.
-Indentation is used to define scope in python.
 
 ## Features
 
