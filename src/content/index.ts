@@ -4,6 +4,7 @@ import computer_science from './computer_science.md'
 import git from './git.md'
 import graphql from './graphql.md'
 import javascript from './javascript.md'
+import jest from './jest.md'
 import python from './python.md'
 import regex from './regex.md'
 import seo_optimization from './seo_optimization.md'
@@ -16,6 +17,7 @@ const content: { [index: string]: string } = {
     git,
     graphql,
     javascript,
+    jest,
     python,
     regex,
     seo_optimization,

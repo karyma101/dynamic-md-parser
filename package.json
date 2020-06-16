@@ -5,7 +5,8 @@
     "main": "webpack.config.js",
     "scripts": {
         "dev": "webpack-dev-server --mode development --open",
-        "build": "webpack --mode production"
+        "build": "webpack --mode production",
+        "test": "jest"
     },
     "repository": {
         "type": "git",
@@ -19,14 +20,21 @@
     },
     "homepage": "https://github.com/karyma101/cheatsheet-markdown#readme",
     "devDependencies": {
+        "@testing-library/jest-dom": "^5.10.1",
+        "@testing-library/react": "^10.2.1",
+        "@types/jest": "^26.0.0",
         "@types/react": "^16.9.36",
         "@types/react-dom": "^16.9.8",
         "@types/react-router-dom": "^5.1.5",
         "@types/react-syntax-highlighter": "^11.0.4",
         "css-loader": "^3.5.3",
         "html-webpack-plugin": "^4.3.0",
+        "jest": "^26.0.1",
+        "jest-dom": "^4.0.0",
         "raw-loader": "^4.0.1",
+        "react-test-render": "^1.1.2",
         "style-loader": "^1.2.1",
+        "ts-jest": "^26.1.0",
         "ts-loader": "^7.0.5",
         "typescript": "^3.9.5",
         "webpack": "^4.43.0",

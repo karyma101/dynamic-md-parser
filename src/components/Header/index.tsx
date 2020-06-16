@@ -27,7 +27,7 @@ const Header: React.FC<Props> = ({ toggleMenu }) => {
 
             <div className={style.title}>
                 <Link to="/" className={style.title_text}>
-                    Dev Cheatsheet
+                    Dev Handbook
                 </Link>
             </div>
 
