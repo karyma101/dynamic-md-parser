@@ -1,10 +1,10 @@
 # BASH
 
--   [What is a command line interface?](#What-is-a-command-line-interface?)
--   [Commands](#Commands)
--   [Redirection](#Redirection)
--   [Bash Profile](#Bash-Profile)
--   [Bash Scripting](#Bash-Scripting)
+-   [What is a command line interface?](#what-is-a-command-line-interface?)
+-   [Commands](#commands)
+-   [Redirection](#redirection)
+-   [Bash Profile](#bash-profile)
+-   [Bash Scripting](#bash-scripting)
 
 ## What is a command line interface?
 

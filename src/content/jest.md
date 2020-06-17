@@ -5,7 +5,7 @@
 -   [Matchers](#matchers)
 -   [Setup and Teardown](#setup-and-teardown)
 
-## [Matchers](https://jestjs.io/docs/en/expect)
+## Matchers
 
 **toBe** is used to test exact equalities
 
@@ -179,4 +179,12 @@ describe('Scoped / Nested block', () => {
 // 1 - afterEach
 // 2 - afterAll
 // 1 - afterAll
+```
+
+## Snapshot
+
+```js
+test('', () => {
+    expect(value).toMatchSnapshot() // Creates a snapshot
+})
 ```
