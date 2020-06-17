@@ -2,20 +2,26 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-    mode: 'none',
+    mode: 'development',
     entry: {
         app: path.join(__dirname, 'src', 'index.tsx'),
     },
     target: 'web',
     resolve: {
-        extensions: ['.ts', '.tsx', '.js'],
+        extensions: ['.ts', '.tsx', '.js', 'jsx', 'json'],
     },
     module: {
         rules: [
             {
                 test: /\.tsx?$/,
+                exclude: /\.test.tsx?$/,
                 use: 'ts-loader',
                 exclude: '/node_modules/',
+            },
+            {
+                enforce: 'pre',
+                test: /\.js$/,
+                loader: 'source-map-loader',
             },
             {
                 test: /\.md$/,
