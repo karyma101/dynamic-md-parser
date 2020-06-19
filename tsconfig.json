@@ -9,6 +9,7 @@
         "noResolve": false,
         "esModuleInterop": true,
         "removeComments": true,
-        "sourceMap": true
+        "sourceMap": true,
+        "moduleResolution": "node"
     }
 }

@@ -30,14 +30,17 @@
         "@types/react-dom": "^16.9.8",
         "@types/react-router-dom": "^5.1.5",
         "@types/react-syntax-highlighter": "^11.0.4",
+        "@types/react-test-renderer": "^16.9.2",
         "babel-jest": "^26.0.1",
         "css-loader": "^3.5.3",
         "html-webpack-plugin": "^4.3.0",
         "identity-obj-proxy": "^3.0.0",
         "jest": "^26.0.1",
+        "jest-css-modules": "^2.1.0",
         "jest-dom": "^4.0.0",
+        "markdown-loader-jest": "^0.1.1",
         "raw-loader": "^4.0.1",
-        "react-test-render": "^1.1.2",
+        "react-test-renderer": "^16.13.1",
         "source-map-loader": "^1.0.0",
         "style-loader": "^1.2.1",
         "ts-jest": "^26.1.0",
@@ -56,8 +59,12 @@
     },
     "jest": {
         "transform": {
-            "^.+\\.tsx?$": "ts-jest"
+            "^.+\\.tsx?$": "ts-jest",
+            "^.+\\.md?$": "markdown-loader-jest"
         },
+        "transformIgnorePatterns": [
+            "/node_modules/(?!(react-syntax-highlighter)/)"
+        ],
         "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
         "moduleFileExtensions": [
             "ts",
@@ -66,6 +73,10 @@
             "jsx",
             "json",
             "node"
-        ]
+        ],
+        "moduleNameMapper": {
+            "\\.(css|less|scss|sss|styl)$": "<rootDir>/node_modules/jest-css-modules",
+            "\\.(css|less)$": "identity-obj-proxy"
+        }
     }
 }
