@@ -19,11 +19,12 @@ const Nav: React.FC<Props> = ({ location }) => {
     const pathName: string = location.pathname.substr(1).replace(/_/g, ' ')
 
     const renderLinks = links.map((link, i) => {
+        console.log(link)
         const linkName = link.replace(/_/g, ' ')
         const styles: string = pathName === linkName ? `${style.link} ${style.active}` : style.link
 
         return (
-            <Link key={`link_${i}`} to={`/${link}`} className={styles}>
+            <Link key={`link_${i}`} to={`./${link}`} className={styles}>
                 {linkName}
             </Link>
         )

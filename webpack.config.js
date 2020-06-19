@@ -10,6 +10,11 @@ module.exports = {
     resolve: {
         extensions: ['.ts', '.tsx', '.js', 'jsx', 'json'],
     },
+    output: {
+        filename: '[name].js',
+        path: path.resolve(__dirname, 'dist'),
+        publicPath: '/',
+    },
     module: {
         rules: [
             {
@@ -45,11 +50,6 @@ module.exports = {
                 ],
             },
         ],
-    },
-    output: {
-        filename: '[name].js',
-        path: path.resolve(__dirname, 'dist'),
-        publicPath: '/',
     },
     devServer: {
         historyApiFallback: true,
