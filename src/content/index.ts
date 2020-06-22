@@ -10,6 +10,7 @@ import regex from './regex.md'
 import seo_optimization from './seo_optimization.md'
 import testing_library_react from './testing_library_react.md'
 import typescript from './typescript.md'
+import webpack from './webpack.md'
 
 const content: { [index: string]: string } = {
     bash,
@@ -24,6 +25,7 @@ const content: { [index: string]: string } = {
     seo_optimization,
     testing_library_react,
     typescript,
+    webpack,
 }
 
 export default content
