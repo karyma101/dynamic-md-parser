@@ -2,9 +2,9 @@
 
 ## Description
 
-Dev Handbook is an application that dynamically imports links and content from markdown files. It is created with react, typescript, webpack, react markdown.
+Dev Handbook is an application that dynamically renders links and content from markdown files. It is created with react, typescript, webpack, react markdown.
 
-## Installation
+## Getting Started
 
 ```
 git clone https://github.com/karyma101/developer-handbook.git
