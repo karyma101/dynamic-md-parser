@@ -1,8 +1,6 @@
 # Regex
 
-A regular expression is an object that describe a pattern of characters
-
--   _/pattern/modifiers_
+A regular expression is an object that describe a pattern of characters, _/pattern/modifiers_.
 
 ## Patterns
 
